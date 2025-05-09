@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "9933c389-e81e-490a-b613-6fb2b511cd84",
+		"name": "Challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44792465",
+		"_collection_link": "https://brianlee-877550.postman.co/workspace/Brian-Lee's-Workspace~0f08354e-bf89-4eca-8483-a6fd3e848c3a/collection/44792465-9933c389-e81e-490a-b613-6fb2b511cd84?action=share&source=collection_link&creator=44792465"
+	},
+	"item": [
+		{
+			"name": "Find Distance",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"from\": \"AB15 5HB\",\n    \"to\": \"AB21 0AL\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/postcode/distance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"postcode",
+						"distance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Coordinate",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"postcodeData\": {\n        \"postcode\": \"AB10 1XG\",\n        \"latitude\": 1.2312,\n        \"longitude\": 1.2312\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/postcode",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"postcode"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

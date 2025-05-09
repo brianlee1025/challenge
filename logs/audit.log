@@ -1,0 +1,2 @@
+23:51:00.101 [http-nio-8080-exec-3] INFO  c.w.c.logging.AuditLoggingAspect - {"startTime":"2025-05-09T23:50:59.285434+08:00","endTime":"2025-05-09T23:51:00.08186+08:00","executionTime":796,"action":"Find Distance","request":{"from":"AB15 5HB","to":"AB21 0AL"}}
+23:51:07.799 [http-nio-8080-exec-2] INFO  c.w.c.logging.AuditLoggingAspect - {"startTime":"2025-05-09T23:51:07.298536+08:00","endTime":"2025-05-09T23:51:07.797147+08:00","executionTime":499,"action":"Update Postcode","request":{"postcodeData":{"postcode":"AB10 1XG","latitude":1.2312,"longitude":1.2312}}}
